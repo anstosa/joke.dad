@@ -1,0 +1,79 @@
+html {
+  font-family: "Teko", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.u-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.o-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.c-joke {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 20px black;
+  max-width: 80vw;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .c-joke {
+    font-size: 3rem;
+  }
+}
+
+  .c-joke__punchline {
+    text-transform: uppercase;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0;
+    transition-delay: 0;
+  }
+
+  .c-joke__punchline.js-animate {
+    opacity: 1;
+    transition-duration: 0.5s;
+    transition-delay: 1s;
+  }
+
+.c-links {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: calc(100vw - 4rem);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+}
+
+a, a:hover, a:visited, button {
+  text-decoration: underline;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  text-shadow: 0 0 5px black;
+  transition-property: all;
+}
+
+a:hover, button:hover {
+  color: rgb(100, 133, 224);
+}
