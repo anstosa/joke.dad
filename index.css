@@ -4,6 +4,12 @@ html {
   font-style: normal;
 }
 
+*::selection {
+  background: white;
+  color: black;
+  text-shadow: none !important;
+}
+
 .u-center {
   display: flex;
   align-items: center;
@@ -72,8 +78,38 @@ a, a:hover, a:visited, button {
   color: white;
   text-shadow: 0 0 5px black;
   transition-property: all;
+  transition-duration: 0.15s;
 }
 
 a:hover, button:hover {
-  color: rgb(100, 133, 224);
+  color: black;
+  text-shadow: 0 0 5px white;
+}
+
+.c-github:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .c-github:hover .octo-arm {
+    animation: none;
+  }
+  .c-github .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
 }
