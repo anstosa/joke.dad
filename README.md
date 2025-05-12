@@ -1,7 +1,3 @@
-# joke.dad
-
-A self explanatory meme site
-
 ## Can I add a joke?
 
 I DON'T KNOW, CAN YOU?? jk, yes you may. Edit `jokes.json` to add a new joke (you can do it right from GitHub without even downloading the repo) and open a PR, I'd be happy to merge it
